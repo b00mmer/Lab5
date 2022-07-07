@@ -1,0 +1,103 @@
+!
+version 15.4
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+service password-encryption
+security passwords min-length 10
+!
+hostname R1
+!
+!
+!
+enable secret 5 $1$mERr$WvpW0n5HghRrqnrwXCUUl.
+!
+!
+!
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+!
+!
+username admin privilege 15 secret 5 $1$mERr$WvpW0n5HghRrqnrwXCUUl.
+username user01 secret 5 $1$mERr$AAEJVg9OAgW/Zn59wtI4d/
+!
+!
+!
+!
+!
+!
+!
+!
+ip ssh version 2
+ip ssh authentication-retries 2
+ip ssh time-out 90
+no ip domain-lookup
+ip domain-name netsec.com
+!
+!
+spanning-tree mode pvst
+!
+!
+!
+!
+!
+!
+interface GigabitEthernet0/0/0
+ ip address 10.1.1.1 255.255.255.0
+ duplex auto
+ speed auto
+!
+interface GigabitEthernet0/0/1
+ ip address 192.168.1.1 255.255.255.0
+ duplex auto
+ speed auto
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+router ospf 1
+ log-adjacency-changes
+ passive-interface GigabitEthernet0/0/1
+ network 192.168.1.0 0.0.0.255 area 0
+ network 10.1.1.0 0.0.0.3 area 0
+!
+router rip
+!
+ip classless
+!
+ip flow-export version 9
+!
+!
+!
+banner motd $Unauthorized access strictly prohibited!$
+!
+!
+!
+!
+!
+line con 0
+ exec-timeout 5 0
+ password 7 0822455D0A1606181C1B0D1739
+ logging synchronous
+ login local
+!
+line aux 0
+ exec-timeout 5 0
+ password 7 0822455D0A1604020A1B0D1739
+ login
+!
+line vty 0 4
+ exec-timeout 5 0
+ password 7 0822455D0A1613030B1B0D1739
+ login local
+ transport input ssh
+ privilege level 15
+!
+!
+!
+end
+
