@@ -76,3 +76,9 @@ R1>
   ## Часть 4 Настройка SSH Server на роутерах R1 и R3
 
 
+![alt-текст][SSH]
+
+[SSH]:https://github.com/b00mmer/lab1/blob/main/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA1_4.JPG "SSH Server"
+
+
+
