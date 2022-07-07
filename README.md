@@ -60,4 +60,19 @@ Trying 10.1.1.1 ...Open
 [Connection to 10.1.1.1 closed by foreign host]  
 R2>  
   
+После настройки TELNET на VTY 0 4  
+
+  
+  
+R2>telnet 10.1.1.1  
+Trying 10.1.1.1 ...Open  
+  
+  
+User Access Verification  
+  
+Password:   
+R1>  
+  
+  
+
 
