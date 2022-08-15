@@ -1,0 +1,129 @@
+!
+version 15.4
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+security passwords min-length 10
+!
+hostname R3
+!
+!
+!
+enable secret 5 $1$mERr$8BPXRaZKXzJUe84Ckfffz.
+!
+!
+!
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+!
+!
+username admin01 secret 5 $1$mERr$WvpW0n5HghRrqnrwXCUUl.
+!
+!
+!
+!
+!
+!
+!
+!
+ip ssh version 2
+ip domain-name netsec.com
+!
+!
+spanning-tree mode pvst
+!
+class-map type inspect match-any INSIDE_PROTOCOLS
+ match protocol tcp
+ match protocol udp
+ match protocol icmp
+class-map type inspect match-any CONFROOM_PROTOCOLS
+ match protocol http
+ match protocol https
+ match protocol dns
+!
+policy-map type inspect INSIDE_TO_INTERNET
+ class type inspect INSIDE_PROTOCOLS
+  inspect
+!
+policy-map type inspect CONFROOM_TO_INTERNET
+ class type inspect CONFROOM_PROTOCOLS
+  inspect
+!
+policy-map type inspect INSIDE
+ class type inspect class-default
+  pass
+!
+!
+!
+zone security INSIDE
+zone security CONFROOM
+zone security INTERNET
+zone-pair security INSIDE_TO_INTERNET source INSIDE destination INTERNET
+ service-policy type inspect INSIDE_TO_INTERNET
+zone-pair security CONFROOM_TO_INTERNET source CONFROOM destination INTERNET
+ service-policy type inspect CONFROOM_TO_INTERNET
+!
+!
+interface GigabitEthernet0/0/0
+ ip address 10.2.2.1 255.255.255.252
+ zone-member security INTERNET
+ duplex auto
+ speed auto
+!
+interface GigabitEthernet0/0/1
+ no ip address
+ duplex auto
+ speed auto
+!
+interface GigabitEthernet0/0/1.3
+ encapsulation dot1Q 3
+ ip address 192.168.3.1 255.255.255.0
+!
+interface GigabitEthernet0/0/1.33
+ encapsulation dot1Q 33
+ ip address 192.168.33.1 255.255.255.0
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+router ospf 1
+ log-adjacency-changes
+ passive-interface GigabitEthernet0/0/1
+!
+router rip
+!
+ip classless
+ip route 0.0.0.0 0.0.0.0 10.2.2.2 
+!
+ip flow-export version 9
+!
+!
+!
+!
+!
+!
+!
+!
+line con 0
+ exec-timeout 5 0
+ logging synchronous
+ login local
+!
+line aux 0
+ exec-timeout 5 0
+ login local
+!
+line vty 0 4
+ exec-timeout 5 0
+ login local
+ transport input ssh
+!
+!
+!
+end
+
