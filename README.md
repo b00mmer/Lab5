@@ -8,7 +8,7 @@
 
 ![alt-текст][Топология]
 
-[Топология]:https://github.com/b00mmer/lab5/blob/main/Lab5.jpg "Топология"
+[Топология]:https://github.com/b00mmer/Lab5/blob/main/Lab5.JPG "Топология"
 
 2. Таблица адресации
 
