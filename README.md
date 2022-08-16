@@ -30,10 +30,11 @@
   
   ## Часть 3 Проверка функциональности файервола на основе зонных политик на R3
 
+1. Трафик, исходящий из Интернета
+![alt-текст][Internet]
+[Internet]]:https://github.com/b00mmer/lab1/blob/main/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA1_4.JPG "Internet]"
 
-![alt-текст][SSH]
-
-[SSH]:https://github.com/b00mmer/lab1/blob/main/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA1_4.JPG "SSH Server"
+2. Самостоятельная проверка зоны
 
 
 
