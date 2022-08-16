@@ -26,28 +26,7 @@
 
  ## Часть 2 Настройка файервола на основе зонных политик на R3
 
- Проверка доступности роутера R1 с R2 по TELNET  
- 
-   
-  
-R2>telnet 10.1.1.1  
-Trying 10.1.1.1 ...Open  
-  
-[Connection to 10.1.1.1 closed by foreign host]  
-R2>  
-  
-После настройки TELNET на VTY 0 4  
-
-  
-  
-R2>telnet 10.1.1.1  
-Trying 10.1.1.1 ...Open  
-  
-  
-User Access Verification  
-  
-Password:   
-R1>  
+ [Сетевые параметры маршрутизатора R3](https://github.com/b00mmer/Lab5/blob/main/R3_running-config_3.txt)
   
   ## Часть 3 Проверка функциональности файервола на основе зонных политик на R3
 
