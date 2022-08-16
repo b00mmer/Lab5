@@ -19,8 +19,9 @@
 3. [Сетевые параметры маршрутизатора R1](https://github.com/b00mmer/Lab5/blob/main/R1_running-config.txt)
 4. [Сетевые параметры маршрутизатора R2](https://github.com/b00mmer/lab5/blob/main/R2_running-config.txt)
 5. [Сетевые параметры маршрутизатора R3](https://github.com/b00mmer/Lab5/blob/main/R3_running-config_3.txt)
-6.  [Сетевые параметры Server0](https://github.com/b00mmer/Lab5/blob/main/server0.JPG)
-
+6.  [Сетевые параметры Server0 PC-A](https://github.com/b00mmer/Lab5/blob/main/server0.JPG)
+6.  [Сетевые параметры PC-B](https://github.com/b00mmer/Lab5/blob/main/PC-B.JPG)
+7.  [Сетевые параметры PC-C](https://github.com/b00mmer/Lab5/blob/main/PC-C.JPG)
  
 
  ## Часть 2 Настройка и шифрование паролей на роутерах R1 и R3`
