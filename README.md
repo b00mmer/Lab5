@@ -46,6 +46,12 @@
 
 [INSIDE]:https://github.com/b00mmer/Lab5/blob/main/Ping-B.JPG "INSIDE"
 
+
+![alt-текст][INSIDE]
+
+[INSIDE]:https://github.com/b00mmer/Lab5/blob/main/Ping-B.JPG "INSIDE"
+
+
 Проверка с PC-C
 
 ![alt-текст][CONFROOM]
