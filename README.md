@@ -36,6 +36,12 @@
 
 [Internet]:https://github.com/b00mmer/Lab5/blob/main/Ping-A.JPG "Internet"
 
+
+
+![alt-текст][INSIDE]
+
+[INSIDE]:https://github.com/b00mmer/Lab5/blob/main/Ping-B.JPG "INSIDE"
+
 Протокол ICMP не разрешен на файерволе.
 
 2. Самостоятельная проверка зоны
