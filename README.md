@@ -36,13 +36,18 @@
 
 [Internet]:https://github.com/b00mmer/Lab5/blob/main/Ping-A.JPG "Internet"
 
-
+Протокол ICMP не разрешен на файерволе.
 
 ![alt-текст][INSIDE]
 
 [INSIDE]:https://github.com/b00mmer/Lab5/blob/main/Ping-B.JPG "INSIDE"
 
-Протокол ICMP не разрешен на файерволе.
+
+![alt-текст][CONFROOM]
+
+[CONFROOM]:https://github.com/b00mmer/Lab5/blob/main/Ping-C.JPG "CONFROOM"
+
+
 
 2. Самостоятельная проверка зоны
 
