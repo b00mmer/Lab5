@@ -34,7 +34,7 @@
 
 ![alt-текст][Internet]
 
-[Internet]:https://github.com/b00mmer/Lab5/blob/main/Ping-A.JPG"Internet"
+[Internet]:https://github.com/b00mmer/Lab5/blob/main/Ping-A.JPG "Internet"
 
 Протокол ICMP не разрешен на файерволе.
 
