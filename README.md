@@ -47,9 +47,17 @@
 [INSIDE]:https://github.com/b00mmer/Lab5/blob/main/Ping-B.JPG "INSIDE"
 
 
-![alt-текст][INSIDE]
+![alt-текст][HTTP]
 
-[INSIDE]:https://github.com/b00mmer/Lab5/blob/main/Ping-B.JPG "INSIDE"
+[HTTP]:https://github.com/b00mmer/Lab5/blob/main/PC-C-web.JPG "HTTP"
+
+
+
+![alt-текст][HTTPS]
+
+[HTTPS]:https://github.com/b00mmer/Lab5/blob/main/PC-C-webs.JPG "HTTPS"
+
+
 
 
 Проверка с PC-C
@@ -59,6 +67,7 @@
 [CONFROOM]:https://github.com/b00mmer/Lab5/blob/main/Ping-C.JPG "CONFROOM"
 
 
+Протокол ICMP не разрешен на файерволе.
 
 2. Самостоятельная проверка зоны
 
