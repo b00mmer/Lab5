@@ -82,3 +82,9 @@
 [SELF2]:https://github.com/b00mmer/Lab5/blob/main/Ping-C-R.JPG "SELF2"
 
 
+## Приложение
+
+![alt-текст][Appen]
+
+[Appen]:https://github.com/b00mmer/Lab5/blob/main/Appen.JPG "Appen"
+
