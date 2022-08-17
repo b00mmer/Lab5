@@ -32,16 +32,21 @@
 
 1. Трафик, исходящий из Интернета  
 
+Проверка с SERVER 0
+
 ![alt-текст][Internet]
 
 [Internet]:https://github.com/b00mmer/Lab5/blob/main/Ping-A.JPG "Internet"
 
 Протокол ICMP не разрешен на файерволе.
 
+Проверка с PC-B
+
 ![alt-текст][INSIDE]
 
 [INSIDE]:https://github.com/b00mmer/Lab5/blob/main/Ping-B.JPG "INSIDE"
 
+Проверка с PC-C
 
 ![alt-текст][CONFROOM]
 
