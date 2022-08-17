@@ -72,4 +72,13 @@
 2. Самостоятельная проверка зоны
 
 
+![alt-текст][SELF1]
+
+[SELF1]:https://github.com/b00mmer/Lab5/blob/main/Ping-A-R.JPG "SELF1"
+
+
+![alt-текст][SELF2]
+
+[SELF2]:https://github.com/b00mmer/Lab5/blob/main/Ping-C-R.JPG "SELF2"
+
 
